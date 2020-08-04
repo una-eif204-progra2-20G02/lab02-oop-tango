@@ -11,21 +11,19 @@ using namespace std;
 
 class Professor: public Person {
 private:
-double monthSalary;
-double commission;
+double monthlySalary;
+double commissionRate;
 
 public:
 
 Professor();
 Professor(double , double);
-Professor(string const firsname, string const lastname, int documentid, double monthSalary, double commission);
-virtual void ~Professor();
+Professor(string , string, int, double, double);
 virtual double getMonthySalary();
-virtual void setMonthySalary(double monthSalary);
+virtual void setMonthySalary(double);
 virtual double getCommissionRate();
-virtual void setCommissionRate(double commission);
+virtual void setCommissionRate(double);
 double salary();
-
 string toString();
 
 

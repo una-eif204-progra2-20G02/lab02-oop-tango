@@ -27,7 +27,7 @@ public:
 
 //Constructores
 Person();
-Person(string,string,int);
+Person(string, string, int);
 
 //Métodos get
 string getFirstname();
@@ -45,7 +45,7 @@ virtual double salary() = 0;
 virtual string toString()=0;
 
 //Destructor
-virtual ~Person();
+virtual ~Person()=0;
 
 };
 

@@ -19,6 +19,15 @@ Administrative::Administrative(string _firsName, string _lastName, int _document
 double Administrative::getMontlySalary(){
   return montlySalary;
 }
+
 void Administrative::setMontlySalary(double salary){
   montlySalary = salary;
+}
+
+double Administrative::salary(){
+  //Falta
+}
+
+string Administrative::toString(){
+  //Falta
 }
