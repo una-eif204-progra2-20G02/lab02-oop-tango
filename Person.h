@@ -12,7 +12,13 @@
 /**
  * Abstract Class of Person
  */
-class Person {
+class Person 
+{
+
+
+string firstname;
+string lastname;
+int documentid;
 
 };
 
