@@ -18,7 +18,7 @@ public:
 
 Professor();
 Professor(double , double);
-Professor(string , string, int, double, double);
+//Professor(string , string, int, double, double);
 virtual double getMonthySalary();
 virtual void setMonthySalary(double);
 virtual double getCommissionRate();

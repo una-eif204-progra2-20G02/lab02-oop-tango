@@ -6,31 +6,26 @@
 #include <sstream>
 #include "Professor.h"
 
-Professor::Professor(){
+Professor::Professor(){}
 
-}
-Professor::Professor(double mounthlySalary , double commissionRate){
-
-}
-
+Professor::Professor(double mounthlySalary , double commissionRate){}
+/*
 Professor::Professor(string firstname,string lastname, int documentId, double mounthlySalary, double commissionRate){
-
 }
-double Professor::getMonthySalary(){
+*/
 
-}
-void Professor::setMonthySalary(double monthlySalary){
+double Professor::getMonthySalary(){ return monthlySalary; }
 
-}
-double Professor::getCommissionRate(){
+void Professor::setMonthySalary(double monthlySalary)  {this->monthlySalary=monthlySalary;}
 
-}
-void Professor::setCommissionRate(double commissionRate){
+double Professor::getCommissionRate(){ return commissionRate; }
 
-}
-double Professor::salary(){
+void Professor::setCommissionRate(double commissionRate)
+{ this->commissionRate=commissionRate; }
 
-}
-string Professor::toString(){
+double Professor::salary(){return 0;}
+
+string Professor::toString()
+{
 
 }
