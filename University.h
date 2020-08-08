@@ -10,7 +10,7 @@
 #include "Administrative.h"
 
 class University {
-
+int a;
 };
 
 
