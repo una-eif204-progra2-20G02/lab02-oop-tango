@@ -6,7 +6,8 @@
 #define LAB02_OOP_PROFESSOR_H
 
 #include "Person.h"
-#include<string>
+#include<iostream>
+#include<sstream>
 using namespace std;
 
 class Professor: public Person {
@@ -16,13 +17,17 @@ double commissionRate;
 
 public:
 
+///Constructores/////
 Professor();
 Professor(double , double);
-//Professor(string , string, int, double, double);
+Professor(string , string, int, double, double);
+///Metodos Get/////
 virtual double getMonthySalary();
-virtual void setMonthySalary(double);
 virtual double getCommissionRate();
+///Metodos set/////
+virtual void setMonthySalary(double);
 virtual void setCommissionRate(double);
+// otros Metodos ///
 double salary();
 string toString();
 
