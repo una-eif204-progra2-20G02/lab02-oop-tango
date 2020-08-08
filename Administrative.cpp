@@ -28,7 +28,7 @@ void Administrative::setMontlySalary(double montlySalary){
 }
 
 double Administrative::salary(){
-  //Falta
+  return montlySalary;
 }
 
 string Administrative::toString(){
