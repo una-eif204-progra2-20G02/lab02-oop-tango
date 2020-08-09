@@ -8,7 +8,11 @@
 
 
 ////////////Constructor sin parametros/////////////////////////////
-Professor::Professor():Person(){}
+Professor::Professor():Person()
+{
+  monthlySalary= 0;
+  commissionRate= 0;
+}
 
 
 ////////////Constructor con parametros //////////
@@ -35,6 +39,8 @@ double Professor::salary(){
   return monthlySalary;
   }
 
+
+//-----String toString()----------------------------------------------
 string Professor::toString()
 {
 stringstream s;
@@ -42,4 +48,5 @@ s<<"Professor Information: "<< firstname <<"\t"<< lastname << endl;
 s<<"ID: "<< documentid << endl;
 s<<"Monthly Salary: " << monthlySalary << endl;
 return s.str();
+
 }
