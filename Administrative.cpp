@@ -6,13 +6,9 @@
 #include <iomanip>
 #include "Administrative.h"
 
-Administrative::Administrative(){
+Administrative::Administrative():Person(){ monthlySalary=0; }
 
-}
-
-Administrative::Administrative(string _firsName, string _lastName, int _documentid, double _monthlySalary): Person(_firsName, _lastName, _documentid), monthlySalary(_monthlySalary){
-  
-}
+Administrative::Administrative(string _firstName, string _lastName, int _documentid, double _monthlySalary): Person(_firstName, _lastName, _documentid), monthlySalary(_monthlySalary){}
 
 double Administrative::getMonthlySalary(){
   return monthlySalary;
@@ -29,9 +25,11 @@ double Administrative::salary(){
 string Administrative::toString()
 {
   stringstream x;
+
   x <<"Administrative information: "<<this->firstname<<endl;  
   x <<"Doc Id: "<<this->documentid<<endl;
   x<<"Montly Salary: "<<this->monthlySalary<<endl;
+
   return x.str();
   
 }
