@@ -7,6 +7,22 @@
 #include "Administrative.h"
 #include "University.h"
 
-int main() {
+using namespace std;
 
+int main() 
+{
+
+cout<<"Hola";
+
+
+Professor *p1= new Professor("Marta","Rosales", 2098745,50000,700);
+
+  cout<<p1->toString();
+
+Administrative *a1= new Administrative("Rolando", "Mena", 45879642, 400000);
+
+  cout<<a1->toString();
+
+
+  return 0;
 }

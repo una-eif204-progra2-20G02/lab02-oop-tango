@@ -24,13 +24,11 @@ class University
   University(string, Professor*, Administrative*);
   string getName();
   void setName(string);
-  string getProfessor();
+  Professor* getProfessor();
   void setProfessor(Professor*);
-  string getAdministrative();
+  Administrative* getAdministrative();
   void setAdministrative(Administrative*);
   
-
-
 
 };
 
