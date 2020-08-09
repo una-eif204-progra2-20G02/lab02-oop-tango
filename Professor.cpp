@@ -12,7 +12,7 @@ Professor::Professor(){}
 
 
 ////////////Constructor con parametros //////////
-Professor::Professor(string firstname,string lastname, int documentid, double _mounthlySalary, double _commissionRate): Person(firsName, lastName, documentid), montlySalary(_monthlySalary), commissionRate(_commissionRate){
+Professor::Professor(string firstname,string lastname, int documentid, double _monthlySalary, double _commissionRate): Person(firstname, lastname, documentid), monthlySalary(_monthlySalary), commissionRate(_commissionRate){
 }
 
 
@@ -31,7 +31,9 @@ void Professor::setMonthySalary(double monthlySalary)  {
   }
 
 ///////////Otros metodos////////////////////////////////////
-double Professor::salary(){return 0;}
+double Professor::salary(){
+  return monthlySalary;
+  }
 
 string Professor::toString(){
 

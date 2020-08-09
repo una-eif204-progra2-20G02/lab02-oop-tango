@@ -19,7 +19,6 @@ public:
 
 ///Constructores/////
 Professor();
-Professor(double , double);
 Professor(string , string, int, double, double);
 ///Metodos Get/////
 virtual double getMonthySalary();
