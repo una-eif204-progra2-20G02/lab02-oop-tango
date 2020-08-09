@@ -8,16 +8,15 @@
 
 class Administrative: public Person {
   private:
-    double montlySalary;
+    double monthlySalary;
   public:
   //Constructores
     Administrative();
-    Administrative(double);
     Administrative(string, string, int, double);
 
     //Metodos 
-    double getMontlySalary();
-    void setMontlySalary(double);
+    double getMonthlySalary();
+    void setMonthlySalary(double);
     double salary();
     string toString();
 };
