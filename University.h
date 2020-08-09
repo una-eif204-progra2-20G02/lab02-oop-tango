@@ -9,9 +9,8 @@
 #include "Professor.h"
 #include "Administrative.h"
 
-class University
- {
-int a;
+class University {
+
 };
 
 

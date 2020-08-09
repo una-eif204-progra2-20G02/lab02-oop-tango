@@ -6,9 +6,9 @@
 #include <iomanip>
 #include "Administrative.h"
 
-Administrative::Administrative():Person(){}
+Administrative::Administrative():Person(){ monthlySalary=0; }
 
-Administrative::Administrative(string _firstName, string _lastName, int _documentid, double _monthlySalary): Person(_firstName, _lastName, _documentid), monthlySalary(_monthlySalary){}
+Administrative::Administrative(string _firstName, string _lastName, int _documentid, double _monthlySalary):Person(_firstName, _lastName, _documentid), monthlySalary(_monthlySalary){}
 
 double Administrative::getMonthlySalary(){
   return monthlySalary;

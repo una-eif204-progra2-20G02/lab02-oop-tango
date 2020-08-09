@@ -8,7 +8,7 @@
 
 
 ////////////Constructor sin parametros/////////////////////////////
-Professor::Professor(){}
+Professor::Professor():Person(){}
 
 
 ////////////Constructor con parametros //////////
