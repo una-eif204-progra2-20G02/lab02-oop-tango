@@ -48,5 +48,4 @@ s<<"Professor Information: "<< firstname <<"\t"<< lastname << endl;
 s<<"ID: "<< documentid << endl;
 s<<"Monthly Salary: " << monthlySalary << endl;
 return s.str();
-
 }
