@@ -20,15 +20,25 @@ class University
   vector<Administrative>administrativeList;
 
   public:
+  //------------Constructores-------------------------------------------------------
   University();
   University(string, Professor*, Administrative*);
+
+ //------------Métodos get----------------------------------------------------------
   string getName();
-  void setName(string);
   Professor* getProfessor();
-  void setProfessor(Professor*);
   Administrative* getAdministrative();
+
+  //-----------Métodos set----------------------------------------------------------
   void setAdministrative(Administrative*);
-  
+  void setName(string);
+  void setProfessor(Professor*);
+
+//----------------Métodos-----------------------------------------------------------
+  void addProfessor(professor); 
+
+
+
 
 };
 

@@ -22,3 +22,5 @@ University::University(string _name, Professor* _professor, Administrative* _adm
   void University::setName(string name){ this-> name = name; }
   void University::setProfessor(Professor* prof){ this->professor = prof; }
   void University::setAdministrative(Administrative* admin){this->administrative = admin; }
+
+  
