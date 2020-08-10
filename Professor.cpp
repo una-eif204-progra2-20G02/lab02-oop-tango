@@ -38,14 +38,18 @@ void Professor::setMonthySalary(double monthlySalary)  {
 double Professor::salary(){
   return monthlySalary;
   }
-
+double Professor::commission(){
+  commissionRate = monthlySalary * 0.05;
+  return commissionRate;
+}
 
 //-----String toString()----------------------------------------------
 string Professor::toString()
 {
 stringstream s;
-s<<"Professor Information: "<<firstname<<"\t"<< lastname << endl;
-s<<"ID: "<< documentid << endl;
-s<<"Monthly Salary: " << monthlySalary << endl;
+s<<"Professor Information: "<<firstname<<" "<<lastname<<endl;
+s<<"Doc Id: "<< documentid <<", ";
+s<<"Monthly Salary: " <<fixed<<setprecision(2)<< monthlySalary << endl;
+s<<"Commission Rate: "<<commission()<<endl;
 return s.str();
 }

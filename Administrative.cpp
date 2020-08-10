@@ -27,9 +27,9 @@ string Administrative::toString()
   
   stringstream x;
 
-  x <<"Administrative information: "<<this->firstname<<"\t"<<lastname<<endl;  
+  x <<"Administrative information: "<<this->firstname<<" "<<lastname<<endl;  
   x <<"Doc Id: "<<this->documentid<<endl;
-  x<<"Montly Salary: "<<this->monthlySalary<<endl;
+  x<<"Monthly Salary: "<<this->monthlySalary<<endl;
 
   return x.str();
   

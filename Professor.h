@@ -29,7 +29,7 @@ virtual void setCommissionRate(double);
 // otros Metodos ///
 double salary();
 string toString();
-
+double commission();
 
 };
 
