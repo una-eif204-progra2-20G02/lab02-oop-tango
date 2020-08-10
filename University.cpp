@@ -36,7 +36,6 @@ University::University(string _name, Professor* _professor, Administrative* _adm
     return s.str();
   }
 
-
     void University::addAdministrative(Administrative* administrative)
   {
     administrativeList.push_back(administrative);

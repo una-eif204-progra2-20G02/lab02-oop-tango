@@ -8,16 +8,11 @@
 
 
 ////////////Constructor sin parametros/////////////////////////////
-Professor::Professor():Person()
-{
-  monthlySalary= 0;
-  commissionRate= 0;
-}
-
+Professor::Professor():Person(), monthlySalary(0),commissionRate(0)
+{}
 
 ////////////Constructor con parametros //////////
-Professor::Professor(string firstname,string lastname, int documentid, double _monthlySalary, double _commissionRate): Person(firstname, lastname, documentid), monthlySalary(_monthlySalary), commissionRate(_commissionRate){
-}
+Professor::Professor(string firstname,string lastname, int documentid, double _monthlySalary, double _commissionRate): Person(firstname, lastname, documentid), monthlySalary(_monthlySalary), commissionRate(_commissionRate){}
 
 
 ///////////metodos Get////////////////////////////////////
