@@ -6,11 +6,12 @@
 #include <iomanip>
 #include "Administrative.h"
 
-Administrative::Administrative():Person(){ monthlySalary=0; }
+Administrative::Administrative():Person(){ monthlySalary = 0; }
 
 Administrative::Administrative(string _firstName, string _lastName, int _documentid, double _monthlySalary):Person(_firstName, _lastName, _documentid), monthlySalary(_monthlySalary){}
 
-double Administrative::getMonthlySalary(){
+double Administrative::getMonthlySalary()
+{
   return monthlySalary;
 }
 
@@ -29,7 +30,7 @@ string Administrative::toString()
 
   x <<"Administrative information: "<<this->firstname<<" "<<lastname<<endl;  
   x <<"Doc Id: "<<this->documentid<<endl;
-  x<<"Monthly Salary: "<<this->monthlySalary<<endl;
+  x <<"Monthly Salary: "<<fixed<<setprecision(2)<<this->monthlySalary<<endl;
 
   return x.str();
   
