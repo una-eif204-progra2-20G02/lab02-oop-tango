@@ -19,6 +19,7 @@ class Administrative: public Person {
     void setMonthlySalary(double);
     double salary();
     string toString();
+    
 };
 
 #endif //LAB02_OOP_ADMINISTRATIVE_H

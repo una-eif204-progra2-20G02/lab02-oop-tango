@@ -16,8 +16,8 @@ class University
   string name;
   Professor* professor;
   Administrative* administrative;
-  vector<Professor>professorList;
-  vector<Administrative>administrativeList;
+  vector<Professor*>professorList;
+  vector<Administrative*>administrativeList;
 
   public:
   //------------Constructores-------------------------------------------------------
@@ -35,10 +35,11 @@ class University
   void setProfessor(Professor*);
 
 //----------------Métodos-----------------------------------------------------------
-  void addProfessor(professor); 
+  void addProfessor(Professor *); 
+  string getListProfessor();
 
-
-
+  void addAdministrative(Administrative *);
+  string getListAdministrative();
 
 };
 

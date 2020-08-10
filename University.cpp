@@ -23,4 +23,31 @@ University::University(string _name, Professor* _professor, Administrative* _adm
   void University::setProfessor(Professor* prof){ this->professor = prof; }
   void University::setAdministrative(Administrative* admin){this->administrative = admin; }
 
-  
+  void University::addProfessor(Professor* professor)
+  {
+    professorList.push_back(professor);
+  }
+
+  string University::getListProfessor(){
+    stringstream s;
+    for(int i=0; i< professorList.size();i++){
+      s<<professorList[i]->toString()<<endl;
+    }
+    return s.str();
+  }
+
+
+    void University::addAdministrative(Administrative* administrative)
+  {
+    administrativeList.push_back(administrative);
+  }
+
+    string University::getListAdministrative()
+    {
+    stringstream s;
+    for(int i=0; i< administrativeList.size();i++)
+    {
+      s<<administrativeList[i]->toString()<<endl;
+    }
+    return s.str();
+    }
