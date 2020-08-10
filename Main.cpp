@@ -19,6 +19,8 @@ Professor *p1= new Professor("Marta","Rosales", 2098745,50000,700);
 
   cout<<p1->toString();
 
+cout<<endl<<endl;
+
 Administrative *a1= new Administrative("Rolando", "Mena", 45879642, 400000);
 
   cout<<a1->toString();

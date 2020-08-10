@@ -24,6 +24,7 @@ double Administrative::salary(){
 
 string Administrative::toString()
 {
+  
   stringstream x;
 
   x <<"Administrative information: "<<this->firstname<<"\t"<<lastname<<endl;  
