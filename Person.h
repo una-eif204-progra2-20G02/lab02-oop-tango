@@ -41,11 +41,11 @@ void setLastname(string);
 void setDocumentid(int);
 
 //Métodos virtuales puros
-virtual double salary() = 0;
-virtual string toString()=0;
+virtual double salary() ;
+virtual string toString();
 
 //Destructor
-virtual ~Person()=0;
+virtual ~Person();
 
 };
 

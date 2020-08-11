@@ -17,8 +17,8 @@ class Administrative: public Person {
     //Metodos 
     double getMonthlySalary();
     void setMonthlySalary(double);
-    double salary();
-    string toString();
+    double salary() override;
+    string toString()override;
     
 };
 

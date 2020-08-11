@@ -36,7 +36,19 @@ void Person::setFirstname(string firstname){ this->firstname  =  firstname;  }
 void Person::setLastname(string lastname)  { this ->lastname   =  lastname;  }
 void Person::setDocumentid(int documentid) { this->documentid=documentid;    }
 
- //------------------------------------------------------------------------------
+ //-------------------------------------------------------------------
 //Destructor
 Person::~Person(){}
 
+double Person::salary(){
+return 0;
+}
+string Person::toString()
+{
+stringstream x;
+
+x <<"Persona: "<<firstname<<","<<lastname<<endl;
+x <<"Doc Id: "<<documentid<<endl;
+
+return x.str();
+}

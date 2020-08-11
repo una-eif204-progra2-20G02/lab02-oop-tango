@@ -27,8 +27,8 @@ virtual double getCommissionRate();
 virtual void setMonthySalary(double);
 virtual void setCommissionRate(double);
 // otros Metodos ///
-double salary();
-string toString();
+double salary() override;
+string toString()override;
 double commission();
 
 };
