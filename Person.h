@@ -40,8 +40,8 @@ void setFirstname(string);
 void setLastname(string);
 void setDocumentid(int);
 
-//Métodos virtuales puros
-virtual double salary() ;
+
+virtual double salary();
 virtual string toString();
 
 //Destructor
