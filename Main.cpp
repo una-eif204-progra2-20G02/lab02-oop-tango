@@ -12,9 +12,6 @@ using namespace std;
 int main() 
 {
 
-setlocale(LC_ALL, "");
-cout << "Hola" << endl;
-
 Professor *p1= new Professor("Mike","Guzman", 1234567890,1575000,0);
 
 cout<<endl<<endl;
