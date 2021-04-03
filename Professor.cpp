@@ -48,7 +48,7 @@ stringstream s;
 s<<"Professor Information: "<<firstname<<" "<<lastname<<endl;
 s<<"Doc Id: "<< documentid <<", ";
 s<<"Monthly Salary: " <<fixed<<setprecision(2)<< monthlySalary << endl;
-s<<"Commission Rate: "<<commission()<<endl;
+
 
 return s.str();
 }
