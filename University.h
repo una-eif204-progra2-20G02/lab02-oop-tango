@@ -9,7 +9,37 @@
 #include "Professor.h"
 #include "Administrative.h"
 
-class University {
+class University 
+{
+  private:
+  
+  string name;
+  Professor* professor;
+  Administrative* administrative;
+  vector<Professor*>professorList;
+  vector<Administrative*>administrativeList;
+
+  public:
+  //------------Constructores-------------------------------------------------------
+  University();
+  University(string, Professor*, Administrative*);
+
+ //------------Métodos get----------------------------------------------------------
+  string getName();
+  Professor* getProfessor();
+  Administrative* getAdministrative();
+
+  //-----------Métodos set----------------------------------------------------------
+  void setAdministrative(Administrative*);
+  void setName(string);
+  void setProfessor(Professor*);
+
+//----------------Métodos-----------------------------------------------------------
+  void addProfessor(Professor *); 
+  string getListProfessor();
+
+  void addAdministrative(Administrative *);
+  string getListAdministrative();
 
 };
 

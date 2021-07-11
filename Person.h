@@ -8,11 +8,44 @@
 
 #include <string>
 #include <ostream>
-
+#include <sstream>
+using namespace std;
 /**
  * Abstract Class of Person
  */
-class Person {
+
+class Person 
+{
+
+protected:
+
+string firstname;
+string lastname;
+int documentid;
+
+public:
+
+//Constructores
+Person();
+Person(string, string, int);
+
+//Métodos get
+string getFirstname();
+string getLastname();
+int getDocumentid();
+
+
+//Métodos set
+void setFirstname(string);
+void setLastname(string);
+void setDocumentid(int);
+
+
+virtual double salary();
+virtual string toString();
+
+//Destructor
+virtual ~Person();
 
 };
 
